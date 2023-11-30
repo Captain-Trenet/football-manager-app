@@ -1,0 +1,48 @@
+.container {
+  display: inline-block;
+
+  padding: 0 16px;
+  border-radius: 8px;
+  border: 1px solid #494949;
+  width: 248px;
+  .searchbar {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    .searchBtn {
+      color: #fea013;
+
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      position: absolute;
+      right: 0;
+      z-index: 100;
+    }
+
+    .clear {
+      cursor: pointer;
+      position: absolute;
+      right: 0;
+    }
+
+    .search {
+      color: #cbcbcb;
+      background: none;
+      border: none;
+      height: 100%;
+      padding: 12px 0;
+
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 400;
+      width: 62%;
+
+      &:focus {
+        outline: none;
+        caret-color: #fff;
+      }
+    }
+  }
+}

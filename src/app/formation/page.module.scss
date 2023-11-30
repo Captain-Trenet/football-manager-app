@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.formation {
+  padding: 32px;
+  border-radius: 8px;
+  background: var(--neutral-background-2, #2d2d2d);
+  height: calc(100vh - 151px);
+  width: 100%;
+  display: flex;
+  gap: 32px;
+
+  .playerInfo {
+    width: 25%;
+    border-radius: 4px;
+    background: var(--neutral-background-1, #222);
+  }
+}

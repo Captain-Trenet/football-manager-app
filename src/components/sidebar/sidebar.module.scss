@@ -1,0 +1,49 @@
+.sidebar {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 60px;
+  background-color: #111;
+  height: 100vh;
+  padding: 20px;
+  gap: 48px;
+
+  .logo {
+    width: 28px;
+    height: 28px;
+  }
+
+  a {
+    .active {
+      svg {
+        .sidebarIcon {
+          fill: red;
+        }
+      }
+    }
+  }
+
+  svg:hover {
+    .sidebarIcon {
+      transition: all 0.3s;
+      fill: #fea013;
+      cursor: pointer;
+    }
+  }
+}
+
+.activeLink {
+  display: flex;
+  align-items: center;
+  position: relative;
+  .circle {
+    position: absolute;
+    top: 50%;
+    left: -25%;
+    transform: translate(-50%, -50%);
+    width: 4px;
+    height: 4px;
+    background-color: #fea013;
+    border-radius: 50%;
+  }
+}

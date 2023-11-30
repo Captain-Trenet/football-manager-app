@@ -1,0 +1,106 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  .position {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #2d2d2d;
+    border: 2px solid #cbcbcb;
+
+    color: var(--text-headings, #f8f8f8);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .name {
+    color: var(--text-headings, #f8f8f8);
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+@mixin commonMid {
+  z-index: 100;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.mid1 {
+  @include commonMid;
+  left: 50%;
+  top: 15%;
+}
+.mid2 {
+  left: 50%;
+  top: calc(50% + 13px);
+  @include commonMid;
+}
+.mid3 {
+  left: 50%;
+  bottom: 15%;
+  @include commonMid;
+  transform: translate(-50%, 50%);
+}
+
+.def1 {
+  @include commonMid;
+  left: 23%;
+  top: 10%;
+}
+.def4 {
+  left: 23%;
+  bottom: 10%;
+  @include commonMid;
+  transform: translate(-50%, 50%);
+}
+.def2 {
+  left: 20%;
+  top: 30%;
+  @include commonMid;
+}
+.def3 {
+  left: 20%;
+  bottom: 30%;
+  @include commonMid;
+  transform: translate(-50%, 50%);
+}
+
+.for1 {
+  right: 20%;
+  top: 20%;
+  @include commonMid;
+}
+.for2 {
+  @include commonMid;
+  right: 15%;
+  top: calc(50% + 13px);
+}
+.for3 {
+  right: 20%;
+  bottom: 20%;
+  @include commonMid;
+  transform: translate(-50%, 50%);
+}
+
+.goal {
+  top: calc(50% + 13px);
+  left: calc(6% - 16px);
+  @include commonMid;
+}
+
+.activePlayer {
+  background-color: #fea013 !important;
+  border: 2px solid #fea013 !important;
+}

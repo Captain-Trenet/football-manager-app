@@ -1,0 +1,85 @@
+.container {
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #cbcbcb;
+    border-spacing: 0 15px;
+  }
+
+  th {
+    color: #cbcbcb;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  th,
+  td {
+    text-align: left;
+  }
+
+  td {
+    color: #cbcbcb;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 20px;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+.country {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.container {
+  // border: 3px solid red;
+  padding: 20px;
+  border-radius: 8px;
+  background: #2d2d2d;
+  height: calc(100vh - 151px);
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+    border-radius: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #494949; /* Color of the scrollbar thumb */
+    border-radius: 8px;
+  }
+}
+
+.importInfo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+  .importInfoMsg {
+    color: var(--text-normal, #cbcbcb);
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 0;
+  }
+
+  .importInfoBtn {
+    margin-top: 0;
+    color: var(--primary-orange, #fea013);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+}
+
+.edit {
+  cursor: pointer;
+}

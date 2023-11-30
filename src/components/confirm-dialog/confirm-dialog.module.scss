@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  width: 379px;
+  padding: 18px 24px 24px 24px;
+  flex-direction: column;
+  gap: 28px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: var(--text-normal, #cbcbcb);
+  gap: 25.5px;
+
+  border-radius: 8px;
+  background: var(--neutral-background-2, #2d2d2d);
+  box-shadow: 0px 12px 28px 0px rgba(22, 22, 22, 0.5);
+
+  .top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .heading {
+      color: var(--text-headings, #f8f8f8);
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .closeDialog {
+      cursor: pointer;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+  }
+}

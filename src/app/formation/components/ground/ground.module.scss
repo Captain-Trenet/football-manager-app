@@ -1,0 +1,89 @@
+.ground {
+  height: 100%;
+  min-width: 808px;
+  min-height: 541px;
+  width: 75%;
+  border-radius: 4px;
+  background: radial-gradient(
+    62.62% 73.52% at 50% 50%,
+    rgba(58, 169, 76, 0) 0%,
+    rgba(27, 77, 35, 0.42) 54.17%,
+    rgba(15, 45, 20, 0.45) 73.44%,
+    rgba(0, 0, 0, 0.33) 100%
+  );
+  background-color: #3aa94c;
+  padding: 30px 32px;
+  z-index: 1;
+
+  .fieldOutline {
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    border: 1px solid #ffffffb3;
+    position: relative;
+
+    .centerLine {
+      width: 1px;
+      height: 100%;
+      background-color: #ffffffb3;
+      position: absolute;
+      left: 50%;
+    }
+    .centerCircle {
+      border: 1px solid #ffffffb3;
+      min-width: 165px;
+      min-height: 165px;
+      width: 18%;
+      aspect-ratio: 1;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+    }
+
+    @mixin commonGoal {
+      border: 1px solid #ffffffb3;
+      min-height: 156px;
+      min-width: 51px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .leftGoal {
+      @include commonGoal;
+      border-left: none;
+
+      left: 0;
+      height: 28%;
+      width: 6%;
+    }
+    .leftGoal2 {
+      border-left: none;
+
+      left: 0;
+      @include commonGoal;
+      height: 75%;
+      width: 18%;
+    }
+
+    .rightGoal {
+      @include commonGoal;
+      border-right: none;
+
+      right: 0;
+      height: 28%;
+      width: 6%;
+    }
+    .rightGoal2 {
+      @include commonGoal;
+
+      border-right: none;
+
+      right: 0;
+      height: 75%;
+      width: 18%;
+    }
+  }
+}

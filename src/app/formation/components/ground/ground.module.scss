@@ -60,10 +60,9 @@
       width: 6%;
     }
     .leftGoal2 {
-      border-left: none;
-
       left: 0;
       @include commonGoal;
+      border-left: none;
       height: 75%;
       width: 18%;
     }
